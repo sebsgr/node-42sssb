@@ -1,5 +1,7 @@
-let foo: number | string = "" as any;
-        
+export {};
+
+declare let foo: number | string;
+
 console.log(foo.length)             // Error
 console.log(foo.toExponential());   // Error
 
