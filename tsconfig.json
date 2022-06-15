@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext"
+    "target": "esnext",
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true
   }
 }

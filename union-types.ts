@@ -1,15 +1,9 @@
-export {};
+export { };
 
-declare let foo: number | string;
+declare const foo: number | string;
 
-console.log(foo.length)             // Error
-console.log(foo.toExponential());   // Error
+foo.length;            // Error
+foo.toExponential();   // Error
 
-console.log(foo.toLocaleString());  // OK
+foo.toLocaleString();
 
-if (typeof foo === "string") {
-    console.log(foo.length);
-}
-else {
-    console.log(foo.toExponential());
-}
