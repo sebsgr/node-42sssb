@@ -1,6 +1,11 @@
 export { };
 
-type Person = { name: string, age: number }
+type Person = {
+    readonly id: number,
+    name: string,
+    age: number,
+    city?: string
+};
 
 type PartialPerson = Partial<Person>;
 

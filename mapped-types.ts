@@ -1,8 +1,12 @@
 export { };
 
-interface Person {
-    name: string;
-    age: number;
-}
+type Person = {
+    readonly id: number,
+    name: string,
+    age: number,
+    city?: string
+};
 
-type t = Partial<Person>
+type OptionalPerson = ...
+
+type StringPerson = ...
