@@ -8,10 +8,6 @@ function loggingIdentity<T>(arg: T): T {
 }
 
 
-
-
-
-
 class WrapedType<T extends () => any> {
 
     constructor(private value: T) { }

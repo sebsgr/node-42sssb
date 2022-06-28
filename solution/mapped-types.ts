@@ -8,7 +8,7 @@ type Person = {
 };
 
 type OptionalPerson = {
-    [P in keyof Person]?: Person[P];
+    [P in keyof Person as `${P}s`]?: Person[P];
 }
 
 type StringPerson = {
