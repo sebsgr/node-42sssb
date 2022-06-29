@@ -12,7 +12,7 @@ function f(obj: FirstParam<typeof f1> & FirstParam<typeof f2>, arg: SecondParam<
     return [f1(obj, arg), f2(obj, arg)];
 }
 
-const foo = f("demo", { a: 4, b: "", c: true, d: "bar" });
+const [foo1, foo2] = f("demo", { a: 4, b: "", c: true, d: "bar" });
+console.log(foo1);
+console.log(foo2);
 
-const foo0 = foo[0] // type: string
-const foo1 = foo[1] // type: number

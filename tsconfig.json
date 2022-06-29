@@ -2,6 +2,9 @@
   "compilerOptions": {
     "target": "esnext",
     "strictNullChecks": true,
-    "strictPropertyInitialization": true
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": true,
+    "allowUnreachableCode": false
   }
 }
